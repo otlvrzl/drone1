@@ -1,0 +1,29 @@
+https://github.com/mustafa-gokce/ardupilot-software-development
+
+killall screen
+
+screen -ls
+
+mavproxy.py --master=udpin:127.0.0.1:14550
+
+1200x800
+
+----
+    To retrieve MAVProxy session, do the below.
+
+screen -r proxy
+
+    To exit the MAVProxy session, press Ctrl+a, d and ENTER.
+
+    To stop the simulation software binary session, do the below.
+
+screen -S vehicle -X quit
+
+    To stop the MAVProxy session, do the below.
+
+screen -S proxy -X quit
+
+    To stop both of them at the same time, do the below.
+
+killall screen
+----
